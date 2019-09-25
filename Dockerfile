@@ -100,13 +100,13 @@ RUN cd /tmp \
 
 # begin install vesta
     && bash /tmp/vst-install-ubuntu.sh \
-        --nginx yes --apache yes --phpfpm no \
-        --vsftpd no --proftpd no \
+        --nginx yes --apache no --phpfpm yes \
+        --vsftpd no --proftpd yes \
         --named yes --exim yes --dovecot yes \
         --spamassassin yes --clamav yes \
         --iptables yes --fail2ban yes \
         --mysql yes --postgresql yes --remi yes \
-        --quota no --password MakeItSo18 \
+        --quota no --email mnunes@vialink.com.br --password 123456789! \
         -y no -f \
 
 # begin apache stuff
